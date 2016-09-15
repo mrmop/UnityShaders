@@ -48,24 +48,6 @@
 				return o;
 			}
 			
-/*			fixed4 frag (v2f i) : SV_Target
-			{
-				fixed2 uvs = i.uv;
-				fixed offset = (_ScrollX * _Time);
-				uvs.x += offset;
-				uvs.x = fmod(uvs.x, 1);
-				fixed2 uvs2 = i.uv;
-				uvs2.x -= offset;
-				uvs2.x = fmod(uvs2.x, 1);
-				if (uvs2.x < 0)
-					uvs2.x += 1;
-				uvs2.y = 1 - uvs.y;
-				fixed4 col = tex2D(_MainTex, uvs);
-				fixed4 col2 = tex2D(_MainTex, uvs2);
-				col = (col + col2) / 2;
-				return col;
-			}*/
-			// TODO: Replace fmod with mod
 			fixed4 frag(v2f i) : SV_Target
 			{
 				fixed time = _Time * _WaveSpeed;
