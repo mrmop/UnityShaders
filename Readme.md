@@ -1,6 +1,7 @@
 Unity Shaders
 -------------
 A collection of Unity shaders
+- ColourCycleTexture - Applies a colour cycle effect to a texture
 - WaveTexture - A wave texture effect
 - WaterTexture - A double layer water waving texture effect
 - WaveTransTexture - Applies x and y axis wave to a texture, great text effect
